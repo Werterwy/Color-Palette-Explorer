@@ -21,12 +21,14 @@ function createColorPalette(numColors) {
 ``}
 }
 
+
 // Функция выбора цвета с учетом настроек оттенка, насыщенности и светлоты
 function selectColor(color) {
   const selectedColors = document.getElementById('selected-colors');
   const selectedColorDiv = document.createElement('div');
   const hue = document.getElementById('hue').value;
-  const saturation = document.getElementById('saturation').value;
+    const saturation = document.getElementById('saturation').value;
+
   const lightness = document.getElementById('lightness').value;
 
   selectedColorDiv.style.backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
