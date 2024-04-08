@@ -58,8 +58,8 @@
  .color-controls button {
    margin-top: 35px;
    padding: 10px 20px;
-   /* margin-right: 10px;
-   margin-left: 10px; */
+    margin-right: 10px;
+   margin-left: 10px; 
    margin: 10px;
    border: none;
    background-color: #000;
@@ -68,6 +68,7 @@
    cursor: pointer;
    border-radius: 5px;
  }
+
 
  .color-controls button:hover {
    background-color: #0056b3;

@@ -67,6 +67,7 @@ function createColorPaletteFromHues(hues) {
   });
 }
 
+
 // Функция сохранения палитры
 function savePalette() {
   const selectedColors = document.querySelectorAll('.selected-color');
@@ -77,6 +78,7 @@ function savePalette() {
   // Здесь вы можете отправить палитру на сервер или сохранить ее локально, в зависимости от ваших потребностей
   alert('Палитра сохранена: ' + palette.join(', '));
 }
+
 
 // Обработчики событий для кнопок
 document.getElementById('generate-analogous').addEventListener('click', generateAnalogousPalette);
