@@ -1,17 +1,4 @@
-// Генерация случайного цвета в формате RGB
-/*function randomColor() {
-  return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)},
-   ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
-}*/
-/*FFB71C1C
-FFF44336*/
-/*const predefinedColors = [
-    "FFB71C1C", "FFE91E63", "FF9C27B0", "FF673AB7",
-    "FF3F51B5", "FF2196F3", "FF03A9F4", "FF00BCD4",
-    "FF009688", "FF4CAF50", "FF8BC34A", "FFCDDC39",
-    "FFFFEB3B", "FFFFC107", "FFFF9800", "FFFF5722"
-];
-*/
+
 const predefinedColorsHSL = [
     "hsl(5, 100%, 57%)", "hsl(342, 82%, 64%)", "hsl(307, 71%, 48%)", "hsl(261, 57%, 53%)",
     "hsl(248, 69%, 49%)", "hsl(207, 91%, 64%)", "hsl(196, 100%, 50%)", "hsl(187, 100%, 80%)",
@@ -34,17 +21,8 @@ function createColorPalette() {
 ``}
 }
 
-
 // Функция выбора цвета с учетом настроек оттенка, насыщенности и светлоты
 function selectColor(color) {
-  /*  const selectedColors = document.getElementById('selected-colors');
-    const selectedColorDiv = document.createElement('div');
-    const hslValues = color.match(/\d+/g); // Извлекаем числовые значения из строки HSL
-
-    selectedColorDiv.style.backgroundColor = color;
-    selectedColorDiv.classList.add('selected-color');
-*//*    selectedColorDiv.textContent = `hsl(${hslValues[0]}, ${hslValues[1]}%, ${hslValues[2]}%)`;*//*
-    selectedColors.appendChild(selectedColorDiv);*/
     const selectedColorDiv = document.querySelector('.selected-color');
     const hslValues = color.match(/\d+/g); // Извлекаем числовые значения из строки HSL
 
@@ -55,21 +33,6 @@ function selectColor(color) {
     document.getElementById('saturation').value = hslValues[1];
     document.getElementById('lightness').value = hslValues[2];
 }
-
-/*// Функция выбора цвета с учетом настроек оттенка, насыщенности и светлоты
-function selectColor(color) {
-  const selectedColors = document.getElementById('selected-colors');
-  const selectedColorDiv = document.createElement('div');
-  const hue = document.getElementById('hue').value;
-  const saturation = document.getElementById('saturation').value;
-
-  const lightness = document.getElementById('lightness').value;
-
-  selectedColorDiv.style.backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-  selectedColorDiv.classList.add('selected-color');
-  selectedColorDiv.textContent = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-  selectedColors.appendChild(selectedColorDiv);
-}*/
 
 // Функция создания аналогичной палитры
 function generateAnalogousPalette() {
@@ -160,25 +123,6 @@ function createSelectColor() {
     selectedColorDiv.style.backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 }
 
-/*// Обработчик события изменения значения input[type="range"]
-document.querySelectorAll('input[type="range"]').forEach(input => {
-    input.addEventListener('input', function () {
-        const output = document.getElementById(`${this.id}-value`);
-        output.textContent = this.value;
-
-        // Получаем текущие значения оттенка, насыщенности и светлоты
-        const hue = document.getElementById('hue').value;
-        const saturation = document.getElementById('saturation').value;
-        const lightness = document.getElementById('lightness').value;
-
-        // Обновляем цвет выбранного элемента палитры
-        const selectedColorDiv = document.querySelector('.selected-color');
-        if (selectedColorDiv) {
-            selectedColorDiv.style.backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-           // selectedColorDiv.textContent = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-        }
-    });
-});*/
 
 
 // Обработчики событий для кнопок
