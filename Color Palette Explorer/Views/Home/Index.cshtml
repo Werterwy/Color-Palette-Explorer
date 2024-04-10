@@ -12,25 +12,37 @@
 <div class="container">
     <h1>Color Palette Explorer</h1>
     <div class="color-palette">
-        <div class="color-picker" id="color-picker">
-            <!-- Здесь будет палитра выбора цветов -->
+        
+        <div class="color-controls">
+            <label for="hue">Оттенок:</label>
+            <input type="range" id="hue" min="0" max="360" value="60">
+            <output for="hue" id="hue-value">60</output>
+
+            <label for="saturation">Насыщенность:</label>
+            <input type="range" id="saturation" min="0" max="100" value="75">
+            <output for="saturation" id="saturation-value">75</output>
+
+            <label for="lightness">Светлота:</label>
+            <input type="range" id="lightness" min="0" max="100" value="50">
+            <output for="lightness" id="lightness-value">50</output>
+
+            <div class="color-picker" id="color-picker">
+                <!-- Здесь будет палитра выбора цветов -->
+            </div>
+
+            
         </div>
         <div class="selected-colors" id="selected-colors">
             <!-- Здесь будут отображаться выбранные цвета -->
         </div>
-        <div class="color-controls">
-            <label for="hue">Оттенок:</label>
-            <input type="range" id="hue" min="0" max="360" value="60">
-            <label for="saturation">Насыщенность:</label>
-            <input type="range" id="saturation" min="0" max="100" value="75">
-            <label for="lightness">Светлота:</label>
-
-            <input type="range" id="lightness" min="0" max="100" value="50">
-
-            <button id="generate-analogous">Создать аналогичную палитру</button>
-
-            <button id="generate-complementary">Создать дополнительную палитру</button>
-            <button id="save-palette">Сохранить палитру</button>
-        </div>
+      
+        
     </div>
+    <div class="button-group">
+        <button id="generate-analogous">Создать аналогичную палитру</button>
+
+        <button id="generate-complementary">Создать дополнительную палитру</button>
+        <button id="save-palette">Сохранить палитру</button>
+    </div>
+    
 </div>
