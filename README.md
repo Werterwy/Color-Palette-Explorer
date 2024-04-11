@@ -1,8 +1,9 @@
-# Color Palette Explorer[ссылка на деплой](https://color-pallete-weld.vercel.app/)
+# [Color Palette Explorer](https://color-pallete-weld.vercel.app/)
 
 ![Color Palette Explorer](https://raw.githubusercontent.com/Werterwy/Color-Palette-Explorer/master/Color%20Palette%20Explorer/wwwroot/images/Color%20Palette%20Explorer.PNG)
 
-
+[ссылка на деплой](https://color-pallete-weld.vercel.app/)
+[Ссылка на репозиторий скомпилированной версии](https://github.com/Werterwy/color-pallete/)
 ## Описание
 
 Color Palette Explorer - это веб-приложение, разработанное для исследования и создания цветовых палитр. Пользователи могут настраивать оттенок, насыщенность и светлоту цветов, а также создавать дополнительные и аналогичные цветовые схемы.
