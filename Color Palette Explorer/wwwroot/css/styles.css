@@ -19,6 +19,20 @@
 .selected-colors {
     width: 100%;
 }
+.HEX-code {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+    .HEX-code:hover {
+        font-weight: bold;
+        font-size: 30px;
+    }
 
 .color {
     width: 55px;
