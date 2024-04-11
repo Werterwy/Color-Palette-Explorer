@@ -147,6 +147,9 @@ document.querySelectorAll('input[type="range"]').forEach(input => {
         }
 
         selectedColorDiv.style.backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+
+        const hexCode = rgbToHex(selectedColorDiv.style.backgroundColor);
+        updateHexCode(hexCode);
     });
 });
 
