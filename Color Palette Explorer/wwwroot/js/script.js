@@ -104,6 +104,7 @@ function createPaletteColor(randomHue) {
 }
 
 function createPalette() {
+
     const hue = document.getElementById('hue').value;
     const saturation = document.getElementById('saturation').value;
     const lightness = document.getElementById('lightness').value;
@@ -116,17 +117,25 @@ function createPalette() {
 
 
 function savePalette() {
-    const selectedColors = document.querySelectorAll('.selected-color');
+
+    const selectedColor = document.querySelector('.selected-color');
+    const hexCode = rgbToHex(selectedColor.style.backgroundColor);
+
+    const hexCodeElement = document.querySelector('.HEX-code');
+    hexCodeElement.textContent = hexCode.substring(1);
+
+    copyToClipboard('#' + hexCodeElement.textContent);
+
     const palette = [];
 
-    selectedColors.forEach(color => {
+    selectedColor.forEach(color => {
         const colorValue = color.style.backgroundColor;
         palette.push(colorValue);
     });
 
     localStorage.setItem('customPalette', JSON.stringify(palette));
 
-    alert('Палитра сохранена на вашем компьютере.');
+    //alert('Палитра сохранена на вашем компьютере.');
 }
 
 document.querySelectorAll('input[type="range"]').forEach(input => {
@@ -190,6 +199,7 @@ function updateLightnessOutput(value) {
 document.getElementById('generate-analogous').addEventListener('click', AnalogousPalette);
 document.getElementById('generate-complementary').addEventListener('click', createPalette);
 document.getElementById('save-palette').addEventListener('click', savePalette);
+
 
 createColorPalette();
 createSelectColor();
