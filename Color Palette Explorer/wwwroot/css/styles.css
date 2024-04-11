@@ -4,7 +4,7 @@
     margin: 0 auto;
     text-align: center;
 }
-
+/* color-palette */
 .color-palette {
     display: flex;
     justify-content: space-around;
@@ -19,6 +19,7 @@
 .selected-colors {
     width: 100%;
 }
+
 .HEX-code {
     font-size: 25px;
     text-align: center;
@@ -33,7 +34,7 @@
         font-weight: bold;
         font-size: 30px;
     }
-
+/* color */
 .color {
     width: 55px;
     height: 55px;

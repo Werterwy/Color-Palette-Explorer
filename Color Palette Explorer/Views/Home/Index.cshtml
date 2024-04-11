@@ -2,17 +2,9 @@
     ViewData["Title"] = "Home Page";
 }
 
-@*<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-*@
-
-
 <div class="container">
     <h1>Color Palette Explorer</h1>
     <div class="color-palette">
-        
         <div class="color-controls">
             <label for="hue">Оттенок:</label>
             <input type="range" id="hue" min="0" max="360" value="60">
@@ -26,29 +18,16 @@
             <input type="range" id="lightness" min="0" max="100" value="50">
             <output for="lightness" id="lightness-value">50</output>
 
-            <div class="color-picker" id="color-picker">
-                <!-- Здесь будет палитра выбора цветов -->
-            </div>
-
-            
+            <div class="color-picker" id="color-picker"></div>
         </div>
         <div class="selected-colors" id="selected-colors">
-            <div class="selected-color">
-                <!-- Здесь будет выбранный цвет -->
-            </div>
-            <div class="HEX-code">
-                <!-- Здесь будет отображаться HEX-код выбранного цвета -->
-            </div>
+            <div class="selected-color"></div>
+            <div class="HEX-code"></div>
         </div>
-        
-      
-        
     </div>
     <div class="button-group">
         <button id="generate-analogous">Создать аналогичную палитру</button>
-
         <button id="generate-complementary">Создать дополнительную палитру</button>
         <button id="save-palette">Сохранить палитру</button>
     </div>
-    
 </div>
