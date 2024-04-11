@@ -1,4 +1,4 @@
-# Color Palette Explorer
+# Color Palette Explorer[ссылка на деплой](https://color-pallete-weld.vercel.app/)
 
 ![Color Palette Explorer](https://raw.githubusercontent.com/Werterwy/Color-Palette-Explorer/master/Color%20Palette%20Explorer/wwwroot/images/Color%20Palette%20Explorer.PNG)
 
