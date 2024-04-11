@@ -23,10 +23,9 @@ function createColorPalette() {
 function selectColor(color) {
     const selectedColorDiv = document.querySelector('.selected-color');
     const hslValues = color.match(/\d+/g); 
-    const hexCode = rgbToHex(selectedColorDiv.style.backgroundColor);
-
+    
     selectedColorDiv.style.backgroundColor = color;
-
+    const hexCode = rgbToHex(selectedColorDiv.style.backgroundColor);
     document.getElementById('hue').value = hslValues[0];
     updateHueOutput(hslValues[0]);
     document.getElementById('saturation').value = hslValues[1];
