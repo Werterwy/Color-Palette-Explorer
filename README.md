@@ -1,6 +1,7 @@
 # Color Palette Explorer
 
-![Color Palette Explorer](https://raw.githubusercontent.com/Werterwy/Color-Palette-Explorer/main/screenshot.png)
+![Color Palette Explorer](https://raw.githubusercontent.com/Werterwy/Color-Palette-Explorer/master/Color%20Palette%20Explorer/wwwroot/images/Color%20Palette%20Explorer.PNG)
+
 
 ## Описание
 
